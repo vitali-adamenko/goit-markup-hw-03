@@ -9,13 +9,8 @@
 }
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px;
   font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-size: 16px;
-  line-height: 1.5;
   color: var(--primary-color);
   background-color: var(--pure-white-color);
 }
@@ -76,12 +71,15 @@ a {
 }
 
                                 /* header*/
-
+nav{ display: flex;
+  align-items: center;}
 .nav {
   display: flex;
   align-items: center;
 }
 .header-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
   align-items: center;
   display: flex;
   background: var(--pure-white-color);
@@ -99,11 +97,6 @@ a {
   margin-left: 40px;
 }
 
-nav {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .mail {
   margin-left: auto;
 }
@@ -148,7 +141,7 @@ nav {
   letter-spacing: 0.02em;
   color: var(--pure-white-color);
 }
-.hero-section > div {
+.hero-section{
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -191,9 +184,11 @@ nav {
 
                                      /*advantages*/
 
+.advantages{padding-top: 120px;padding-bottom: 120px;}
+
 .advantages ul {
   display: flex;
-  margin-top: 120px;
+ 
 }
 .advantages p {
   margin-top: 8px;
@@ -214,10 +209,9 @@ nav {
 }
 .features ul {
   display: flex;
-}
-.features div {
   margin-top: 72px;
 }
+
 .features li {
   margin-right: 24px;
 }
@@ -230,15 +224,14 @@ nav {
 .our-team {
   padding-top: 120px;
   padding-bottom: 120px;
-  margin-top: 120px;
 }
-.our-team h3 {
-  margin-top: 32px;
-}
-.our-team div {
-  margin-top: 72px;
+
+.card div {
+  padding-bottom:  32px ;
+ padding-top: 32px;
 }
 .our-team ul {
+  margin-top: 72px;
   display: flex;
 }
 .our-team li {
@@ -248,9 +241,9 @@ nav {
 .our-team li:last-child {
   margin-right: 0;
 }
-.our-team p {
-  margin-bottom: 24px;
-}
+.card p {margin-top: 8px;
+margin-bottom: 0;}
+
 .card {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -259,19 +252,19 @@ nav {
 
                                     /*footer*/
 
-footer > div {
+
+
+
+footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  color: var(--light-color);
+  background-color: var(--secondary-color);
 }
 footer p {
   margin-top: 16px;
   letter-spacing: 0.02em;
   line-height: 1.2;
-}
-
-footer {
-  color: var(--light-color);
-  background-color: var(--secondary-color);
 }
 .studio-footer {
   font-family: 'Raleway';
@@ -310,7 +303,7 @@ footer {
 .filter{
   justify-content: center;
   display: flex;
-  margin-top: 96px;
+ 
 }
 .filter-list{
   display: flex;
@@ -324,3 +317,6 @@ margin-top: 72px;}
   border:1px solid #E7E9FC;
  }
 .hide{display: none;}
+.portfolio{
+  padding-top: 96px;
+padding-bottom: 72px;}
